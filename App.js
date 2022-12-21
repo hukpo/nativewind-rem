@@ -7,9 +7,9 @@ export default function App() {
   return (
     <View className="flex-1 items-center justify-center bg-white">
       {/* works */}
-      <View className="w-remTest min-h-[40px] bg-[#ffdd00]" />
+      <View className="w-remTest min-h-[10rem] bg-[#ffdd00]" />
 
-      {/* bug */}
+      {/* bug, minHeight is undefined */}
       <View className="w-remTest min-h-remTest bg-[#ddff00]" />
     </View>
   );
